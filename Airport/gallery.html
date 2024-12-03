@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Gallery</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Airport Gallery</h1>
+        <div class="gallery">
+            <img src="https://plus.unsplash.com/premium_photo-1663039978729-6f6775725f89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWlycG9ydHxlbnwwfHwwfHx8MA%3D%3D" alt="Airport View 1">
+            <img src="https://plus.unsplash.com/premium_photo-1661501562127-a8bb26defb35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWlycG9ydHxlbnwwfHwwfHx8MA%3D%3D" alt="Airport View 2">
+            <img src="https://images.unsplash.com/photo-1558204692-5f402fe220b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlycG9ydHxlbnwwfHwwfHx8MA%3D%3D" alt="Airport View 3">
+            <img src="https://images.unsplash.com/photo-1541674162775-15fd6b6802e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFpcnBvcnR8ZW58MHx8MHx8fDA%3D" alt="Airport View 4">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Airport Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>

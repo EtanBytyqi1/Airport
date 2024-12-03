@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Map</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .map-section {
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: center;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        .map-section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .map-section a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #003366;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #003366;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .map-section a:hover {
+            background-color: #003366;
+            color: white;
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Airport Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="map-section">
+            <h2>Airport Interior Map</h2>
+            <p>Explore our interactive map for terminal details and amenities.</p>
+            <a href="https://www.figma.com/design/m9hzDChwCw6ZgRgmwgYOiE/Untitled?t=M37nfqUk5iMkJWPo-0" target="_blank">View Map Prototype</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Airport Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

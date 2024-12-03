@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking & Rent a Car</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .section h2 {
+            margin-bottom: 15px;
+        }
+        .parking, .rent-a-car {
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parking.html">Parking & Rent a Car</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <div class="parking">
+                <h2>Parking Information</h2>
+                <ul>
+                    <li>Short-term parking: $2/hour.</li>
+                    <li>Long-term parking: $10/day.</li>
+                    <li>Parking spaces for disabled passengers are available near the terminal.</li>
+                </ul>
+            </div>
+            <div class="rent-a-car">
+                <h2>Rent a Car Options</h2>
+                <p>Partnered rental companies:</p>
+                <ul>
+                    <li>Hertz</li>
+                    <li>Avis</li>
+                    <li>Enterprise</li>
+                </ul>
+                <p>Rental desks are located on Level 2 of the terminal building.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Airport Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>
